@@ -1,13 +1,13 @@
-## Simple app javafx 
+### Simple app javafx 
 
-## fork 
+### fork from https://github.com/ngoctho-hust/QLNK  - src root
 
-## conn mysql
+### conn mysql + edit something 
 
-## use MVC: Conn- DAO- (Service)- Control- view (fxml)
+### use MVC: Conn- DAO- (Service)- Control- view (fxml)
 
-## use Gradle: 
-
+### use Gradle: 
+```
 plugins {
     id 'java'
     id 'application'    //??
