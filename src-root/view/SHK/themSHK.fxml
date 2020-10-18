@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="761.0" prefWidth="1298.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SHK.ControllerThemSHK">
+   <children>
+      <TableView fx:id="tableNhanKhau" layoutX="1.0" layoutY="232.0" prefHeight="529.0" prefWidth="1298.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="colMaNhanKhau" prefWidth="130.0" text="Mã Nhân Khẩu " />
+            <TableColumn fx:id="colQuanHe" minWidth="0.0" prefWidth="158.0" text="Quan hệ với chủ hộ" />
+            <TableColumn fx:id="colHoTen" prefWidth="151.0" text="Họ Tên" />
+            <TableColumn fx:id="colTenGoiKhac" prefWidth="109.0" text="Họ Tên Khác" />
+            <TableColumn fx:id="colNgaySinh" prefWidth="84.0" text="Ngày Sinh" />
+            <TableColumn fx:id="colQuocTich" prefWidth="81.0" text="Quốc Tịch" />
+            <TableColumn fx:id="colGioiTinh" prefWidth="73.0" text="Giới Tính" />
+            <TableColumn fx:id="colQueQuan" prefWidth="95.0" text="Quê Quán" />
+            <TableColumn fx:id="colDanToc" prefWidth="70.0" text="Dân Tộc" />
+            <TableColumn fx:id="colTonGiao" prefWidth="83.0" text="Tôn Giáo" />
+            <TableColumn fx:id="colNgheNghiep" prefWidth="111.0" text="Nghề Nghiệp" />
+            <TableColumn fx:id="colNoiLamViec" prefWidth="152.0" text="Nơi Làm Việc" />
+         </columns>
+      </TableView>
+      <Text layoutX="68.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SỔ HỘ KHẨU" AnchorPane.leftAnchor="67.0283203125" AnchorPane.rightAnchor="726.9716796875" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font size="49.0" />
+         </font>
+      </Text>
+      <Text layoutX="67.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Địa chỉ thường trú:" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="119.0" />
+      <TextField fx:id="txtDiaChi" layoutX="198.0" layoutY="114.0" AnchorPane.leftAnchor="198.0" AnchorPane.topAnchor="114.0" />
+      <Button fx:id="btnThemNhanKhau" layoutX="857.0" layoutY="191.0" mnemonicParsing="false" text="Thêm nhân khẩu" AnchorPane.rightAnchor="310.0" AnchorPane.topAnchor="191.0" />
+      <Button fx:id="btnChinhSua" layoutX="913.0" layoutY="191.0" mnemonicParsing="false" text="Chỉnh sửa" AnchorPane.rightAnchor="86.0" AnchorPane.topAnchor="191.0" />
+      <Button fx:id="btnXoa" layoutX="1009.0" layoutY="191.0" mnemonicParsing="false" text="Xoá" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="191.0" />
+      <Button fx:id="btnLuu" layoutX="1076.0" layoutY="77.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="82.0" text="Lưu" AnchorPane.rightAnchor="182.0" AnchorPane.topAnchor="77.0" />
+      <Button fx:id="btnHuy" layoutX="1170.0" layoutY="77.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="68.0" text="Huỷ" AnchorPane.rightAnchor="82.0" AnchorPane.topAnchor="77.0" />
+      <Text layoutX="60.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã hộ khẩu:" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="86.0" />
+      <Text fx:id="textMaHoKhau" layoutX="156.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " AnchorPane.leftAnchor="156.0" AnchorPane.topAnchor="86.0" />
+      <Button fx:id="btnDatLamChuHo" layoutX="694.0" layoutY="191.0" mnemonicParsing="false" text="Đặt làm chủ hộ" AnchorPane.rightAnchor="483.0" AnchorPane.topAnchor="191.0" />
+      <Text layoutX="60.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chủ hộ:" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="158.0" />
+      <Text fx:id="textChuHo" layoutX="128.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " AnchorPane.leftAnchor="128.0" AnchorPane.topAnchor="158.0" />
+      <Button fx:id="btnGiayKhaiSinh" layoutX="1004.0" layoutY="191.0" mnemonicParsing="false" text="Giấy khai sinh" AnchorPane.rightAnchor="182.0" AnchorPane.topAnchor="191.0" />
+   </children>
+</AnchorPane>

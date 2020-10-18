@@ -1,0 +1,24 @@
+select
+	R1.Id_SHK,
+	R3.HoTen,
+	R3.CCCD,
+	R1.DiaChiThuongTru,
+	R1.SoNhanKhau
+from SoHoKhau R1
+join	ChuHo R2
+on  R1.Id_SHK=R2.Id_SHK
+join NhanKhau R3
+on R2.Id_NK=R3.Id_NK;
+
+
+
+from t1,t2  <=> from t1 join t2
+
+select
+	R1.Id_SHK,
+	R3.HoTen,
+	R3.CCCD,
+	R1.DiaChiThuongTru,
+	R1.SoNhanKhau
+from SoHoKhau R1,ChuHo R2,NhanKhau R3
+WHERE  R1.Id_SHK=R2.Id_SHK AND R2.Id_NK=R3.Id_NK;

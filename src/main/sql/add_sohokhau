@@ -1,0 +1,9 @@
+INSERT INTO SoHoKhau (Id_SHK,DiaChiThuongTru,SoNhanKhau)
+VALUES (1,"tramlo",4);
+INSERT INTO SoHoKhau (Id_SHK,DiaChiThuongTru,SoNhanKhau)
+VALUES (2,"tramlo1",4);
+INSERT INTO SoHoKhau (Id_SHK,DiaChiThuongTru,SoNhanKhau)
+VALUES (3,"tramlo2",4);
+INSERT INTO SoHoKhau (Id_SHK,DiaChiThuongTru,SoNhanKhau)
+VALUES (4,"tramlo3",4);
+

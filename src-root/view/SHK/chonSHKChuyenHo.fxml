@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane prefHeight="708.0" prefWidth="1209.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SHK.ControllerChonSHKChuyenHo">
+    <content>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="697.0" prefWidth="1207.0">
+            <children>
+                <Text layoutX="47.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tìm kiếm:" AnchorPane.leftAnchor="47.0" AnchorPane.topAnchor="116.0" />
+                <TableView fx:id="tableViewHoKhau" prefHeight="534.0" prefWidth="1177.0" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="150.0">
+                    <columns>
+                        <TableColumn fx:id="tableColumnMaHoKhau" minWidth="113.0" prefWidth="142.00003051757812" text="Mã hộ khẩu" />
+                        <TableColumn fx:id="tableColumnTenChuHo" minWidth="211.0" prefWidth="211.0" text="Tên chủ hộ" />
+                        <TableColumn fx:id="tableColumnCCCD" minWidth="79.00003051757812" prefWidth="220.0" text="CCCD" />
+                        <TableColumn fx:id="tableColumnDiaCHi" minWidth="406.0" prefWidth="423.0" text="Địa chỉ" />
+                        <TableColumn fx:id="tableColumnSoNhanKhau" maxWidth="482.0" minWidth="107.0" prefWidth="190.0" text="Số nhân khẩu" />
+                    </columns>
+                </TableView>
+                <TextField fx:id="txtTimKiem" layoutX="133.0" layoutY="112.0" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="112.0" />
+                <Text layoutX="482.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHỌN SỔ HỘ KHẨU" textAlignment="CENTER" wrappingWidth="242.9248046875" AnchorPane.leftAnchor="482.0" AnchorPane.topAnchor="14.0">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </Text>
+                <Button fx:id="btnOk" layoutX="936.0" layoutY="45.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="80.0" text="OK" />
+                <Button fx:id="btnHuy" layoutX="1064.0" layoutY="45.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="80.0" text="Huỷ" />
+            </children>
+        </AnchorPane>
+    </content>
+</ScrollPane>

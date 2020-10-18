@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane prefHeight="810.0" prefWidth="1510.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.NhanKhau.ControllerQLNK">
+    <content>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1500.0">
+            <children>
+                <Text layoutX="47.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tìm kiếm:" AnchorPane.leftAnchor="47.0" AnchorPane.topAnchor="116.0" />
+                <TableView fx:id="tableViewNhanKhau" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="150.0">
+                    <columns>
+                        <TableColumn fx:id="tableColumnMaNhanKhau" minWidth="113.0" prefWidth="142.00003051757812" text="Mã nhân khẩu" />
+                        <TableColumn fx:id="tableColumnHoVaTen" minWidth="220.0" prefWidth="352.3333435058594" text="Họ và tên" />
+                        <TableColumn fx:id="tableColumnNgaySinh" minWidth="79.00003051757812" prefWidth="326.0" text="Ngày sinh" />
+                        <TableColumn fx:id="tableColumnGioiTinh" minWidth="285.3333740234375" prefWidth="294.0" text="Giới tính" />
+                        <TableColumn fx:id="tableColumnMaHoKhau" maxWidth="447.333251953125" minWidth="107.0" prefWidth="368.0" text="Mã hộ khẩu" />
+                    </columns>
+                </TableView>
+                <TextField fx:id="txtTimKiem" layoutX="133.0" layoutY="112.0" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="112.0" />
+                <Button fx:id="btnChinhSua" layoutX="939.0" layoutY="111.0" mnemonicParsing="false" text="Xem thông tin" AnchorPane.rightAnchor="446.0" AnchorPane.topAnchor="111.0" />
+                <Button fx:id="btnThemMoiNhanKhau" layoutX="1072.0" layoutY="111.0" mnemonicParsing="false" text="+ Thêm mới NK" AnchorPane.rightAnchor="302.0" AnchorPane.topAnchor="111.0" />
+                <Button fx:id="btnThongKe" layoutX="1397.0" layoutY="112.0" mnemonicParsing="false" text="Thống kê" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="112.0" />
+                <Button fx:id="btnQLNK" layoutX="1310.0" layoutY="43.0" mnemonicParsing="false" text="Quản lý hộ khẩu" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="43.0" />
+            <Button fx:id="btnXoa" layoutX="1332.0" layoutY="111.0" mnemonicParsing="false" text="Xoá" AnchorPane.rightAnchor="122.0" AnchorPane.topAnchor="111.0" />
+            <Text layoutX="133.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QUẢN LÝ NHÂN KHẨU" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnGiayKhaiSinh" layoutX="1208.0" layoutY="112.0" mnemonicParsing="false" text="Giấy khai sinh" />
+            </children>
+        </AnchorPane>
+    </content>
+</ScrollPane>

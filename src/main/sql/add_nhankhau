@@ -1,0 +1,8 @@
+# INSERT INTO NhanKhau(Id_NK,HoTen,NgaySinh,BiDanh,NoiSinh,NguyenQuan,NgheNghiep,NoiLamViec,CCCD,DanToc,DiaChiTruoc,Id_SHK)
+# VALUES( 1,"long","2000/03/03","hello","tramlo","tramlo","hs","hanoi","123455566","kinh","dia chi truoc",1);
+
+INSERT INTO NhanKhau(Id_NK,HoTen,NgaySinh,BiDanh,NoiSinh,NguyenQuan,NgheNghiep,NoiLamViec,CCCD,DanToc,DiaChiTruoc,Id_SHK)
+VALUES( 2,"long2","2000/03/12","hello","tramlo","tramlo","hs","hanoi","123455566","kinh","dia chi truoc",1);
+
+INSERT INTO NhanKhau(Id_NK,HoTen,NgaySinh,BiDanh,NoiSinh,NguyenQuan,NgheNghiep,NoiLamViec,CCCD,DanToc,DiaChiTruoc,Id_SHK)
+VALUES(3,"long3","2000/03/12","hello","tramlo","tramlo","hs","hanoi","123455566","kinh","dia chi truoc",1);

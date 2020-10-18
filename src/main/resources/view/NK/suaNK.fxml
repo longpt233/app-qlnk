@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="414.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SHK.ControllerSuaNK">
+    <children>
+        <Text layoutX="25.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quan hệ với chủ hộ:" />
+        <Text layoutX="44.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Họ tên:" />
+        <TextField fx:id="tfHoTen" layoutX="178.0" layoutY="88.0" />
+        <Text layoutX="18.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tên gọi khác ( nếu có):" />
+        <TextField fx:id="tfTenGoiKhac" layoutX="178.0" layoutY="116.0" />
+        <Text layoutX="391.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày Sinh: " />
+        <TextField fx:id="tfNgay" layoutX="531.0" layoutY="116.0" prefHeight="31.0" prefWidth="48.0" />
+        <Text layoutX="46.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quê Quán:" />
+        <TextField fx:id="tfQueQuan" layoutX="180.0" layoutY="185.0" />
+        <Text layoutX="393.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Giới Tính:" />
+        <Text layoutX="397.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dân Tộc:" />
+        <TextField fx:id="tfDanToc" layoutX="531.0" layoutY="185.0" />
+        <Text layoutX="47.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quốc Tịch:" />
+        <TextField fx:id="tfQuocTich" layoutX="180.0" layoutY="220.0" />
+        <Text layoutX="45.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nghề Nghiệp:" />
+        <TextField fx:id="tfNgheNghiep" layoutX="180.0" layoutY="255.0" />
+        <Text layoutX="398.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nới Làm Việc:" />
+        <TextField fx:id="tfNoiLamViec" layoutX="531.0" layoutY="255.0" />
+        <Text layoutX="28.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nơi Thường Chú Tước Khi Chuyển Đến:" />
+        <TextField fx:id="tfNoiOTruoc" layoutX="300.0" layoutY="293.0" />
+        <Text layoutX="397.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tôn Giáo:" />
+        <TextField fx:id="tfTonGiao" layoutX="531.0" layoutY="220.0" />
+        <TextField fx:id="tfQuanHe" layoutX="178.0" layoutY="149.0" />
+        <Button fx:id="butLuuNhanKhau" layoutX="437.0" layoutY="342.0" mnemonicParsing="false" onAction="#ActionLuuNhanKhau" text="Lưu" />
+        <Button fx:id="butGoBack" layoutX="518.0" layoutY="342.0" mnemonicParsing="false" onAction="#ActionGoBack" text="Huỷ" />
+        <ComboBox fx:id="comboGioiTinh" layoutX="531.0" layoutY="149.0" prefWidth="150.0" />
+        <Text layoutX="180.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã hộ khẩu:" />
+        <Text fx:id="textMaHoKhau" layoutX="266.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="33.10888671875" />
+        <TextField fx:id="tfThang" layoutX="604.0" layoutY="115.0" prefHeight="31.0" prefWidth="58.0" />
+        <TextField fx:id="tfNam" layoutX="677.0" layoutY="114.0" prefHeight="31.0" prefWidth="91.0" />
+        <Text layoutX="592.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/" />
+        <Text layoutX="665.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/" />
+    </children>
+</AnchorPane>

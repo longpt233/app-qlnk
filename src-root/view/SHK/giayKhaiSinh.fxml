@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="481.0" prefWidth="1041.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SHK.ControllerGiayKhaiSinh">
+    <children>
+        <Button fx:id="btnLuu" layoutX="611.0" layoutY="425.0" mnemonicParsing="false" text="Lưu" />
+        <Button fx:id="btnHuy" layoutX="673.0" layoutY="425.0" mnemonicParsing="false" text="Huỷ" />
+        <Text layoutX="8.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã nhân khẩu:" />
+        <Text fx:id="textMaNhanKhau" layoutX="111.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="33.10888671875" />
+      <VBox alignment="CENTER_RIGHT" layoutX="13.0" layoutY="44.0" prefHeight="290.0" prefWidth="100.0" AnchorPane.topAnchor="40.0">
+         <children>
+              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Họ tên:">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày Sinh:">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Giới Tính:">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nơi sinh:">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dân tộc:">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Quốc tịch:">
+               <VBox.margin>
+                  <Insets top="12.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Họ tên cha:">
+               <VBox.margin>
+                  <Insets top="18.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dân tộc">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Quốc tịch:">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Năm sinh:">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nơi thường trú/tạm trú:">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+      </VBox>
+      <VBox layoutX="179.0" layoutY="46.0" prefHeight="341.0" prefWidth="225.0" AnchorPane.topAnchor="46.0">
+         <children>
+              <TextField fx:id="txtHoTen" prefHeight="22.0" prefWidth="187.0" />
+            <HBox alignment="CENTER_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="209.0">
+               <children>
+                    <TextField fx:id="txtNgay" prefHeight="31.0" prefWidth="48.0" />
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+                     <HBox.margin>
+                        <Insets left="3.0" right="3.0" />
+                     </HBox.margin>
+                  </Text>
+                    <TextField fx:id="txtThang" prefHeight="31.0" prefWidth="58.0" />
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+                     <HBox.margin>
+                        <Insets left="3.0" right="3.0" />
+                     </HBox.margin>
+                  </Text>
+                    <TextField fx:id="txtNam" prefHeight="31.0" prefWidth="98.0">
+                     <padding>
+                        <Insets left="3.0" />
+                     </padding>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+              <ComboBox fx:id="comboGioiTinh" prefWidth="150.0" />
+            <TextField fx:id="txtNoiSinh" />
+            <TextField fx:id="txtDanToc" />
+            <TextField fx:id="txtQuocTich" />
+            <TextField fx:id="txtHoTenCha">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin></TextField>
+            <TextField fx:id="txtDanTocCha" />
+            <TextField fx:id="txtQuocTichCha" />
+            <TextField fx:id="txtNamSinhCha" />
+            <TextField fx:id="txtThuongTruCha" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_RIGHT" layoutX="455.0" layoutY="50.0" prefHeight="290.0" prefWidth="100.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nơi đăng ký:">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày đăng ký:">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ghi chú:">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Họ tên người đi khai sinh:">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Quan hệ với người được khai sinh">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Họ tên mẹ:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dân tộc">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Quốc tịch:">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Năm sinh:">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nơi thường trú/tạm trú:">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+      </VBox>
+      <VBox layoutX="692.0" layoutY="49.0" prefHeight="341.0" prefWidth="225.0">
+         <children>
+            <TextField fx:id="txtNoiDangKy" prefHeight="22.0" prefWidth="187.0" />
+            <HBox alignment="CENTER_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="209.0">
+               <children>
+                  <TextField fx:id="txtNgayDK" prefHeight="31.0" prefWidth="48.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+                     <HBox.margin>
+                        <Insets left="3.0" right="3.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="txtThangDK" prefHeight="31.0" prefWidth="58.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+                     <HBox.margin>
+                        <Insets left="3.0" right="3.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="txtNamDK" prefHeight="31.0" prefWidth="98.0">
+                     <padding>
+                        <Insets left="3.0" />
+                     </padding>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <TextField fx:id="txtGhiChu" />
+            <TextField fx:id="txtNguoiKS" />
+            <TextField fx:id="txtQuanHe" />
+            <TextField fx:id="txtHoTenMe">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin></TextField>
+            <TextField fx:id="txtDanTocMe" />
+            <TextField fx:id="txtQuocTichMe" />
+            <TextField fx:id="txtNamSinhMe" />
+            <TextField fx:id="txtThuongTruMe" />
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>

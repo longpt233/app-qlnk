@@ -1,0 +1,43 @@
+CREATE TABLE SoHoKhau (
+	Id_SHK Int(11),
+    DiaChiThuongTru varchar(200),
+    SoNhanKhau int,
+    primary key (Id_SHK)
+);
+
+Create table NhanKhau(
+	Id_NK int(11),
+    HoTen varchar(50),
+    NgaySinh Datetime,
+    BiDanh varchar(50),
+    NoiSinh varchar(200),
+    NguyenQuan varchar(200),
+    NgheNghiep varchar(30),
+    NoiLamViec varchar(100),
+    CCCD varchar(30),
+    DanToc varchar(20),
+    DiaChiTruoc varchar(200),
+    Id_SHK int(11),
+    primary key (id_NK),
+    FOREIGN KEY (Id_SHK) REFERENCES SoHoKhau(Id_SHK)
+);
+
+create table ChuHo(
+	Id_SHK int(11),
+    Id_NK int(11),
+    primary key (Id_SHK)
+
+);
+
+create table GiayKhaiSinh(
+	Id_GKS INT(11),
+    HoTen VARCHAR(50),
+    NgaySinh DATETIME,
+    QueQuan VARCHAR(200),
+    GioiTinh VARCHAR(50),
+    HoTenCha VARCHAR(50),
+    HoTenMe VARCHAR(50),
+    Id_NK INT(11),
+    PRIMARY KEY (Id_GKS),
+    FOREIGN KEY (Id_NK) REFERENCES NhanKhau(Id_NK)
+);

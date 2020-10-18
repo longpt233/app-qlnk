@@ -1,0 +1,2 @@
+INSERT INTO ChuHo(Id_SHK,Id_NK)
+VALUES (1,2);
